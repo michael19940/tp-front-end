@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <!-- tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Roboto:wght@100&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+</head>
+<body>
+
+ <!-- cargar datos con json - js -->
+<h1><img src="78.jpg" align="right">Curriculum Vitae</h1>
+    <ul>
+        <P><strong>Apellido: </strong><span id="apellido"></span></P>
+        <P><strong>Nombre: </strong><span id="nombre"></span></P>
+        <P><strong>Fecha de Nacimiento: </strong><span id="fecha_nacimiento"></span></P>
+        <p><strong>Nacionalidad: </strong><span id="nacionalidad"></span></p>
+        <P><strong>CUIL: </strong><span id="cuil"></span></P>
+        <P><strong>Direccion: </strong><span id="direccion"></span></P>
+        <P><strong>C.P.: </strong><span id="codigo_postal"></span></P>
+        <P><strong>Telefono: </strong><span id="telefono"></span></P>
+        <P><strong>E-mail: </strong><a href="mailto:lewis.lucas@example.com" id="e_mail"></a></P>
+    </ul>
+
+<!-- mostrar/ocultar datos con botos - js -->
+<div id="botones">
+
+    <h2><u>Aptitudes</u>&nbsp;<button type="button" id="boton_aptitudes">mostrar</button></h2>
+        <div id="texto_aptitudes">
+        <ul>
+            <p>Soy una persona responsable, puntual, con alta capacidad analitica que se logra desenvolver ante cualquier situacion; tengo un perfil
+            orientado al cliente y una gran vocacion al trabajo en equipo.<br>
+            Mis expectativas laborales es poner en practica mis conocimientos en diseño web poder, contribuir a la empresa y adquirir experiencia.</p>
+        </ul>
+        </div>
+
+    <h2><u>Formación Académica</u>&nbsp;<button type="button" id="boton_formacion_academica">mostrar</button></h2>
+        <div id="texto_formacion_academica">
+        <ul>
+            <p>2008 - 2011: Postgrado en University of New Mexico School of Law.</p>
+            <p>2003 - 2008: Abogacia en University of New Mexico School of Law.</p>
+            <p>1998 - 2003: Bachiller en el Instituto Albuquerque High School.</p>
+            </ul>
+        </div>
+    
+    <h2><u>Experiencia Laboral</u>&nbsp;<button type="button" id="boton_experiencia_laboral">mostrar</button></h2>
+        <div id="texto_experiencia_laboral">
+        <ul>
+            <p>2008 - 2022: Abogado en B.M.G.</p>
+            <p>2006 - 2008: Pasante en B.G. Brothers</p>
+            <p>2003 - 2005: Call Center en HSBC</p>
+        </ul>
+        </div>
+
+    <h2><u>Idioma</u>&nbsp;<button type="button" id="boton_idioma">mostrar</button></h2>
+        <div id="texto_idioma" class="lista">
+        <ul>
+            <li>Frances: Nivel Intermedio</li>
+            <li>Ingles: Nivel Avanzado</li>
+            <li>Aleman: Nivel Avanzado</li>
+        </ul>
+        </div>
+
+    <h2><u>Conocimientos Informaticos</u>&nbsp;<button type="button" id="boton_conocimientos_informaticos">mostrar</button></h2>
+        <div id="texto_conocimientos_informaticos" class="lista">
+        <ul>
+            <li>Office: Nivel Experto</li>
+            <li>Python: Nivel Experto</li>
+            <li>R Studio: Nivel Intermedio</li>
+            <li>Desarrollo Frontend: Nivel Intermedio</li>
+        </ul>
+        </div>
+
+</div>
+
+<!-- enviar mensaje, falta definir action="pagina que enviara la informacion" -->
+    <h2><u>Enviame Un Mensaje</u>&nbsp;<button type="button" id="boton_mensaje">mostrar</button></h2>
+    <div id="mensaje">
+    <form method ="post">
+        <input type="text" name="nombre" placeholder="mensaje"/>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+
+<!-- salto de linea (la pagina no termine abruptamente con el ultimo elemento cuando se muestre toda la informacion) -->
+<br>
+<br>
+
+<!-- js -->
+<script src ="js/function.js">
+</script>
+
+</body>
+</html>
